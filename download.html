@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Auto Updater - Download</title>
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" type="image/png">
+    <style>
+        body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        .intro {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff0050, #000);
+            z-index: 10;
+            animation: zoomFadeOut 2.5s ease-out forwards;
+        }
+
+        @keyframes zoomFadeOut {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1.5); opacity: 0; visibility: hidden; }
+        }
+
+        .intro img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .container {
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards 2.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        header {
+            background: url('https://i.gifer.com/2FxK.gif') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        header nav a:hover {
+            color: #ff3377;
+        }
+
+        .description {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ff0050;
+            border-radius: 8px;
+        }
+
+        .description h2 {
+            color: #ff0050;
+        }
+
+        .info {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #111;
+            border: 2px solid #ff0050;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        footer nav {
+            margin-top: 10px;
+        }
+
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer nav a:hover {
+            color: #ff3377;
+        }
+
+        .download-btn {
+            padding: 10px 20px;
+            background-color: #ff0050;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #ff3377;
+        }
+
+        .speed {
+            font-size: 14px;
+            color: #ff0050;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="TikTok Icon">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>TikTok Auto Updater</h1>
+            <nav>
+                <a href="index.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Home">Home</a>
+                <a href="download.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Download">Download</a>
+                <a href="info.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Info">Info</a>
+            </nav>
+        </header>
+
+        <section class="description">
+            <h2>Download the Latest TikTok Updates</h2>
+            <p>Signed APK, from the TikTok server.</p>
+        </section>
+
+        <div class="info">
+            <h3>APK Details</h3>
+            <p>Version: 38.3.1 (2023803010)</p>
+            <p>Languages: 24</p>
+            <p>Package: com.zhiliaoapp.musically</p>
+            <p>Downloads: 52</p>
+            <p>File Size: 187.2 MB (196,288,502 bytes)</p>
+            <p>Supports installation on external storage.</p>
+            <p>Min: Android 5.0 (Lollipop, API 21)</p>
+            <p>Target: Android 14 (API 34)</p>
+            <p>Architectures: arm64-v8a + armeabi-v7a</p>
+            <p>DPI: 120, 160, 213, 240, 320, 480, 640dpi</p>
+            <p>Security: MD5, SHA-1, SHA-256 signatures</p>
+            <p>Permissions: 51</p>
+            <p>Features: 12</p>
+            <p>Libraries: 5</p>
+            <p>Uploaded January 14, 2025, at 9:53PM PST by FMODE</p>
+        </div>
+
+        <button class="download-btn" onclick="downloadFile()">Download TikTok APK</button>
+        <p id="download-speed" class="speed"></p>
+
+        <footer>
+            <p>&copy; 2025 TikTok Auto Updater. All rights reserved.</p>
+            <nav>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        function downloadFile() {
+            const fileUrl = '/public/TikTok_38.3.1.apk';  // Path to your file
+            const downloadSpeedDisplay = document.getElementById('download-speed');
+            const fileSize = 196288502; // File size in bytes (for the APK)
+
+            // Simulating download speed
+            let bytesDownloaded = 0;
+            const speed = 50000; // Simulated speed in bytes per second
+            const interval = setInterval(() => {
+                bytesDownloaded += speed;
+                if (bytesDownloaded >= fileSize) {
+                    clearInterval(interval);
+                    downloadSpeedDisplay.textContent = 'Download Complete!';
+                } else {
+                    const downloadSpeed = (speed / 1024).toFixed(2); // KB/s
+                    downloadSpeedDisplay.textContent = `Downloading... ${downloadSpeed} KB/s`;
+                }
+            }, 1000);
+
+            // Start the download after a delay (simulated)
+            setTimeout(() => {
+                window.location.href = fileUrl;
+            }, 1000); // Simulate 1 second before starting the download
+        }
+    </script>
+</body>
+</html>

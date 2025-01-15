@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Auto Updater - Info</title>
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" type="image/png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        .intro {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff0050, #000);
+            z-index: 10;
+            animation: zoomFadeOut 2.5s ease-out forwards;
+        }
+
+        @keyframes zoomFadeOut {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1.5); opacity: 0; visibility: hidden; }
+        }
+
+        .intro img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .container {
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards 2.5s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        header {
+            background: url('https://i.gifer.com/2FxK.gif') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        header nav a:hover {
+            color: #ff3377;
+        }
+
+        .description {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ff0050;
+            border-radius: 8px;
+        }
+
+        .description h2 {
+            color: #ff0050;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        footer nav {
+            margin-top: 10px;
+        }
+
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer nav a:hover {
+            color: #ff3377;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="TikTok Icon">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>TikTok Auto Updater</h1>
+            <nav>
+                <a href="index.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Home">Home</a>
+                <a href="download.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Download">Download</a>
+                <a href="info.html"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="Info">Info</a>
+            </nav>
+        </header>
+
+        <section class="description">
+            <h2>Info TikTok Auto Updater</h2>
+            <p>Since Tiktok Is being banned, Ive decided to make a tiktok auto updater, meaning as in you can update tiktok through this site, its going to be the offical package (apk)
+                Only for android, I will soon be doing Apple.
+            </p>
+            
+        </section>
+
+        <footer>
+            <p>&copy; 2025 TikTok Auto Updater. All rights reserved.</p>
+            <nav>
+                
+                <a href="contact.html">Contact</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
